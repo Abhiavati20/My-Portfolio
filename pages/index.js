@@ -1,17 +1,22 @@
 import NextLink from 'next/link'
 import {
-    Container,
-    Box,
-    Heading,
-    Image,
-    useColorModeValue,
     Link,
+    Container,
+    Heading,
+    Box,
+    Image,
+    SimpleGrid,
     Button,
+    List,
+    ListItem,
+    Icon,
+    useColorModeValue
 } from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/bio'
+import { IoMail,IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -62,15 +67,15 @@ const Page = () => {
                     as well as having keen intreset in blockchain and want to explore Web 3.0.
                     I spend most of my time in coding scalable projects.
                     You can also view my profile on {' '}
-                    <NextLink style={{ color: "blue" }} href="https://github.com/Abhiavati20">
-                        <Link color={"#0071BC"}>Github</Link>
+                    <NextLink  href="https://github.com/Abhiavati20">
+                        <Link>Github</Link>
                     </NextLink>
                     .
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works">
                         <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                            My portfolio
+                            My projects / Works
                         </Button>
                     </NextLink>
                 </Box>
@@ -87,7 +92,7 @@ const Page = () => {
                     <Paragraph>
                         <strong>Full Stack Developer Intern</strong> at {' '}
                         <NextLink href="https://knockonce.in/">
-                            <Link color={"#0071BC"}>KnockOnce</Link>
+                            <Link >KnockOnce</Link>
                         </NextLink>.
                     </Paragraph>
                     
@@ -140,6 +145,47 @@ const Page = () => {
                 </Paragraph>
             </Section>
 
+            <Section delay={0.5}>
+                <Heading as="h3" variant="section-title">
+                    Contact Me : 
+                </Heading>
+                <List>
+                    <ListItem>
+                        <Link href="mailto:abhishekaa1112@gmail.com" target="_blank">
+                            <Button
+                                variant="ghost"
+                                colorScheme="teal"
+                                leftIcon={<Icon as={IoMail} />}
+                            >
+                                abhishekaa1112@gmail.com
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://github.com/Abhiavati20" target="_blank">
+                            <Button
+                                variant="ghost"
+                                colorScheme="teal"
+                                leftIcon={<Icon as={IoLogoGithub} />}
+                            >
+                                Abhiavati20
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://www.linkedin.com/in/abhishekavati/" target="_blank">
+                            <Button
+                                variant="ghost"
+                                colorScheme="teal"
+                                leftIcon={<Icon as={IoLogoLinkedin} />}
+                            >
+                                Abhishek Avati
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    
+                </List>
+            </Section>
         </Container>
     )
 }
