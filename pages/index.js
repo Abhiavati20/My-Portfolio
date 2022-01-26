@@ -26,7 +26,7 @@ const Page = () => {
                 textAlign="center"
                 bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             >
-                Hello, I'm a Full Stack Web Developer based in India!
+                Hello, I&apos;m a Full Stack Web Developer based in India!
             </Box>
             <Box display={{ md: 'flex', }} >
                 <Box flexGrow={1}>
@@ -61,7 +61,7 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>
-                    Currently I am a third year student pursuing bachelor's degree in
+                    Currently I am a third year student pursuing bachelor&apos;s degree in
                     Information Technology from Pune,India. I am a full stack web developer
                     as well as having keen intreset in blockchain and want to explore Web 3.0.
                     I spend most of my time in coding scalable projects.
