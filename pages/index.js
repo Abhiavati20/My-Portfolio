@@ -5,7 +5,6 @@ import {
     Heading,
     Box,
     Image,
-    SimpleGrid,
     Button,
     List,
     ListItem,
@@ -27,7 +26,7 @@ const Page = () => {
                 textAlign="center"
                 bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             >
-                Hello, I&apos;m a Full Stack Web Developer based in India!
+                Hello, I'm a Full Stack Web Developer based in India!
             </Box>
             <Box display={{ md: 'flex', }} >
                 <Box flexGrow={1}>
