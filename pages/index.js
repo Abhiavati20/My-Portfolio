@@ -31,7 +31,7 @@ const Page = () => {
             <Box display={{ md: 'flex', }} >
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title" fontSize={40}  textDecoration='underline #525252'>Abhishek Avati</Heading>
-                    <p>(Artist/Developer/Sportsmen)</p>
+                    <p>(Artist / Developer / Sportsmen)</p>
                 </Box>
 
                 <Box
