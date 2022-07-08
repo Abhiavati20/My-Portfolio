@@ -31,7 +31,7 @@ const Page = () => {
             <Box display={{ md: 'flex', }} >
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title" fontSize={40}  textDecoration='underline #525252'>Abhishek Avati</Heading>
-                    <p>(Artist / Developer / Sportsmen)</p>
+                    <p>(Artist / Developer / Sportsman)</p>
                 </Box>
 
                 <Box
@@ -61,11 +61,11 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>
-                    Currently I am a third year student pursuing bachelor&apos;s degree in
+                    Currently I am a final year student pursuing bachelor&apos;s degree in
                     Information Technology from Pune,India. I am a full stack web developer
                     as well as having keen intreset in blockchain and want to explore Web 3.0.
                     I spend most of my time in coding scalable projects.
-                    You can also view my profile on {' '}
+                    View my profile on {' '}
                     <NextLink  href="https://github.com/Abhiavati20">
                         <Link>Github</Link>
                     </NextLink>
@@ -87,6 +87,22 @@ const Page = () => {
                     Experience
                 </Heading>
                 <BioSection>
+                    <BioYear>May,2022 - Present</BioYear>
+                    <Paragraph>
+                        <strong>Summer Intern</strong> at {' '}
+                        <NextLink href="https://www.ubs.com/in/en.html">
+                            <Link >UBS</Link>
+                        </NextLink>.
+                    </Paragraph>
+                    <Paragraph>
+                        <strong>Designated</strong> as the member of WWS developer team under Wealth Management Sector.
+                    </Paragraph>
+                    <Paragraph>
+                        <strong>Responsible</strong>for improving Security Vulnerabilities.
+                    </Paragraph>
+                </BioSection>
+                <br/>
+                <BioSection>
                     <BioYear>Dec,2021 - Jan,2022</BioYear>
                     <Paragraph>
                         <strong>Full Stack Developer Intern</strong> at {' '}
@@ -96,16 +112,37 @@ const Page = () => {
                     </Paragraph>
                     
                     <Paragraph>
-                        <strong>Responsibility: </strong>To build a web application for one of their Clients. Writing Clean UI components and focused on writing good readable code for backend servers and routes.
+                        <strong>Responsibility:</strong>An Online Marketplace to purchase healthy diet food and purchase a subscription plan for a particular diet plan.
                     </Paragraph>
                     <Paragraph>
-                        <strong>Technical Stack : </strong> MERN.
+                        <strong>Technical Stack:</strong> MERN.
                     </Paragraph>
                     <Paragraph>
-                        <strong>Impact : </strong> Build a web application which met most of the requirements of the client. Which eventually gave a positive impact on the relationship between Client and Organization.
+                        <strong>Features Implemented:</strong> Subscription Model, Payment Integration, Coupon Codes and many more.
                     </Paragraph>
-
+                    <Paragraph>
+                        <strong>Impact:</strong>Focused on writing clean and well documented code and good reusable UI components.
+                    </Paragraph>
+                    <Paragraph>
+                        <strong>Live Website Link:</strong> 
+                        <NextLink  href="https://www.kalorie.in/">
+                            <Link>Kalorie</Link>
+                        </NextLink>
+                    </Paragraph>
                 </BioSection>
+            </Section>
+            <br/>
+            <hr/>
+            <br/>
+            <Section delay={0.4}>
+                <Heading as="h3"  variant="section-title" fontSize={25} textDecoration='underline #525252'>
+                    Achievements
+                </Heading>
+                    <ul>
+                        <li>Selected for final round of Smart India Hackathon,2022.</li>
+                        <li>Tabla Visharad.</li>
+                    </ul>
+                
             </Section>
             <br/>
             <hr/>
@@ -115,20 +152,20 @@ const Page = () => {
                     Skills
                 </Heading>
                 <BioSection>
-                    <BioYear>Languages : </BioYear>
-                    C, C++, JavaScript
+                    <BioYear>Languages:</BioYear>
+                    C, C++, JavaScript, TypeScript.
                 </BioSection>
                 <BioSection>
-                    <BioYear>Libraries : </BioYear>
+                    <BioYear>Libraries:</BioYear>
                     ReactJs, Redux, ChakraUI, Styled-Components, React-Context-API, Tailwind CSS .
                 </BioSection>
                 <BioSection>
-                    <BioYear>FrameWork : </BioYear>
+                    <BioYear>FrameWork:</BioYear>
                     Express JS, Next JS, Django .
                 </BioSection>
                 <BioSection>
-                    <BioYear>Database : </BioYear>
-                    MongoDB, MySql, PostgreSql . 
+                    <BioYear>Database:</BioYear>
+                    MongoDB, MySql, PostgreSql, Firebase. 
                 </BioSection>
             </Section>
             <br/>
